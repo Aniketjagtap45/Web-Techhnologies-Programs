@@ -2,7 +2,7 @@ name: Static Image Gallery Deployment
 on:
   push:
     branches:
-    - main
+    - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
