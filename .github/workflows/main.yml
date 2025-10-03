@@ -23,4 +23,4 @@ jobs:
           
       - name: Static Image gallery to s3 bucket 
         run: aws s3 sync . s3://Web-image-gallery --delete
-        
+      
