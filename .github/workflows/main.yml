@@ -22,13 +22,5 @@ jobs:
           aws-region: us-east-1
           
       - name: Static Image gallery to s3 bucket 
-         run: aws s3 sync . s3://Web-Techhnologies-Programs-d --delete
+        run: aws s3 sync . s3://Web-image-gallery --delete
         
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
